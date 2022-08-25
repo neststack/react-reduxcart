@@ -13,11 +13,11 @@ const App = () => {
 
   useEffect(() => {
     dispatch(calculateTotals());
-  }, [cartItems]);
+  }, [cartItems,dispatch]);
 
   useEffect(() => {
     dispatch(getCartItems());
-  }, []);
+  }, [dispatch]);
 
   return (
     <main>
